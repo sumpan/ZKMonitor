@@ -13,8 +13,9 @@ public class UnitTest {
         zkm.setMonitor("10.1.1.1", new Action() {
             
             @Override
-            public void doWork() {
+            public boolean doWork() {
                 System.out.println("hello world");
+                return false;
                 
             }
         });
